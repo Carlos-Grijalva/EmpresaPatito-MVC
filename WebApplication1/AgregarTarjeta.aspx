@@ -28,9 +28,10 @@
 
                     <div class="mb-3">
                         <label for="fechaCadu" class="form-label">Fecha Caducidad</label>
-                        <asp:TextBox ID="fechaCadu" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ControlToValidate="fechaCadu" ForeColor="Red" ID="RequiredFieldValidator4" runat="server" ErrorMessage="CampoRequerido" Display="Dynamic"></asp:RequiredFieldValidator>
+                        <asp:Calendar ID="fechaCadu" runat="server"></asp:Calendar>
+                        
                     </div>
+                    
 
                     <div class="mb-3">
                         <label for="marca" class="form-label">Marca</label>

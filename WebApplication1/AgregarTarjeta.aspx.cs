@@ -26,7 +26,7 @@ namespace WebApplication1
                 nuevatarjeta.nombreEntidad = nomEntidad.Text;
                 nuevatarjeta.numeroTarjeta = numTarjeta.Text;
                 //DateTime fecha = new DateTime(fechaCadu.text);
-                nuevatarjeta.fechaCaducidad = DateTime.Parse(fechaCadu.Text);
+                nuevatarjeta.fechaCaducidad = fechaCadu.SelectedDate;
                 nuevatarjeta.marca = marca.Text;
                 nuevatarjeta.cvv = Int32.Parse(cvv.Text);
 
@@ -35,7 +35,7 @@ namespace WebApplication1
                 idCuenta.Text = string.Empty;
                 nomEntidad.Text = string.Empty;
                 numTarjeta.Text = string.Empty;
-                fechaCadu.Text = string.Empty;
+                fechaCadu.SelectedDate = DateTime.Now;
                 marca.Text = string.Empty;
                 cvv.Text = string.Empty;
 
