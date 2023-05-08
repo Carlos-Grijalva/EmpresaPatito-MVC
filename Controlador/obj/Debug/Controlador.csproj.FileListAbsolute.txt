@@ -1,0 +1,48 @@
+D:\WebApplication1\Controlador\bin\Debug\Controlador.dll
+D:\WebApplication1\Controlador\bin\Debug\Controlador.pdb
+D:\WebApplication1\Controlador\bin\Debug\Modelo.dll
+D:\WebApplication1\Controlador\bin\Debug\EntityFramework.dll
+D:\WebApplication1\Controlador\bin\Debug\Modelo.pdb
+D:\WebApplication1\Controlador\bin\Debug\Modelo.dll.config
+D:\WebApplication1\Controlador\bin\Debug\EntityFramework.xml
+D:\WebApplication1\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+D:\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+D:\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+D:\WebApplication1\Controlador\obj\Debug\Controlador.dll
+D:\WebApplication1\Controlador\obj\Debug\Controlador.pdb
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\Controlador.dll
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\Controlador.pdb
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.dll
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\EntityFramework.dll
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.pdb
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.dll.config
+D:\WebApplication1\WebApplication1\Controlador\bin\Debug\EntityFramework.xml
+D:\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csprojAssemblyReference.cache
+D:\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+D:\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+D:\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.dll
+D:\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\Controlador.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\Controlador.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\EntityFramework.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\Modelo.dll.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\bin\Debug\EntityFramework.xml
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csproj.AssemblyReference.cache
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\Controlador\obj\Debug\Controlador.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\Controlador.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\Controlador.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\Modelo.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\EntityFramework.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\Modelo.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\Modelo.dll.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\bin\Debug\EntityFramework.xml
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\obj\Debug\Controlador.csproj.AssemblyReference.cache
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\obj\Debug\Controlador.csproj.CopyComplete
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\obj\Debug\Controlador.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\Controlador\obj\Debug\Controlador.pdb

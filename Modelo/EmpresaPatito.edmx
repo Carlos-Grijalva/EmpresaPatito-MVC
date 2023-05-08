@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EmpresaPatitoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cuenta">
+          <Key>
+            <PropertyRef Name="idCuenta" />
+          </Key>
+          <Property Name="idCuenta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idUsuario" Type="int" Nullable="false" />
+          <Property Name="Saldo" Type="float" Nullable="false" />
+          <Property Name="NumeroCuenta" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tarjeta">
+          <Key>
+            <PropertyRef Name="idTarjeta" />
+          </Key>
+          <Property Name="idTarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombreEntidad" Type="varchar" MaxLength="50" />
+          <Property Name="numeroTarjeta" Type="varchar" MaxLength="50" />
+          <Property Name="fechaCaducidad" Type="date" />
+          <Property Name="marca" Type="varchar" MaxLength="50" />
+          <Property Name="cvv" Type="int" />
+          <Property Name="idCuenta" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApellidoPaterno" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApellidoMaterno" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Celular" Type="varchar" MaxLength="10" />
+          <Property Name="Contrasena" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Tarjeta__idCuent__4CA06362">
+          <End Role="Cuenta" Type="Self.Cuenta" Multiplicity="1" />
+          <End Role="Tarjeta" Type="Self.Tarjeta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuenta">
+              <PropertyRef Name="idCuenta" />
+            </Principal>
+            <Dependent Role="Tarjeta">
+              <PropertyRef Name="idCuenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Cuenta_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Cuenta" Type="Self.Cuenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="idUsuario" />
+            </Principal>
+            <Dependent Role="Cuenta">
+              <PropertyRef Name="idUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EmpresaPatitoModelStoreContainer">
+          <EntitySet Name="Cuenta" EntityType="Self.Cuenta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Tarjeta__idCuent__4CA06362" Association="Self.FK__Tarjeta__idCuent__4CA06362">
+            <End Role="Cuenta" EntitySet="Cuenta" />
+            <End Role="Tarjeta" EntitySet="Tarjeta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Cuenta_Usuario" Association="Self.FK_Cuenta_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Cuenta" EntitySet="Cuenta" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EmpresaPatitoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cuenta">
+          <Key>
+            <PropertyRef Name="idCuenta" />
+          </Key>
+          <Property Name="idCuenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idUsuario" Type="Int32" Nullable="false" />
+          <Property Name="Saldo" Type="Double" Nullable="false" />
+          <Property Name="NumeroCuenta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Usuario" Relationship="Self.FK_Cuenta_Usuario" FromRole="Cuenta" ToRole="Usuario" />
+          <NavigationProperty Name="Tarjeta" Relationship="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7" FromRole="Cuenta" ToRole="Tarjeta" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="idUsuario" />
+          </Key>
+          <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Celular" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Contrasena" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Cuenta" Relationship="Self.FK_Cuenta_Usuario" FromRole="Usuario" ToRole="Cuenta" />
+        </EntityType>
+        <Association Name="FK_Cuenta_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Cuenta" Type="Self.Cuenta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="idUsuario" />
+            </Principal>
+            <Dependent Role="Cuenta">
+              <PropertyRef Name="idUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EmpresaPatitoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cuentas" EntityType="Self.Cuenta" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+          <AssociationSet Name="FK_Cuenta_Usuario" Association="Self.FK_Cuenta_Usuario">
+            <End Role="Usuario" EntitySet="Usuarios" />
+            <End Role="Cuenta" EntitySet="Cuentas" />
+          </AssociationSet>
+          <EntitySet Name="Tarjetas" EntityType="EmpresaPatitoModel.Tarjeta" />
+          <AssociationSet Name="FK__Tarjeta__idCuent__49C3F6B7" Association="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7">
+            <End Role="Cuenta" EntitySet="Cuentas" />
+            <End Role="Tarjeta" EntitySet="Tarjetas" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Tarjeta">
+          <Key>
+            <PropertyRef Name="idTarjeta" />
+          </Key>
+          <Property Name="idTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombreEntidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fechaCaducidad" Type="DateTime" Precision="0" />
+          <Property Name="marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="idCuenta" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Cuenta" Relationship="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7" FromRole="Tarjeta" ToRole="Cuenta" />
+          <Property Name="numeroTarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cvv" Type="Int32" />
+        </EntityType>
+        <Association Name="FK__Tarjeta__idCuent__49C3F6B7">
+          <End Type="EmpresaPatitoModel.Cuenta" Role="Cuenta" Multiplicity="1" />
+          <End Type="EmpresaPatitoModel.Tarjeta" Role="Tarjeta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cuenta">
+              <PropertyRef Name="idCuenta" />
+            </Principal>
+            <Dependent Role="Tarjeta">
+              <PropertyRef Name="idCuenta" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EmpresaPatitoModelStoreContainer" CdmEntityContainer="EmpresaPatitoEntities">
+          <EntitySetMapping Name="Cuentas">
+            <EntityTypeMapping TypeName="EmpresaPatitoModel.Cuenta">
+              <MappingFragment StoreEntitySet="Cuenta">
+                <ScalarProperty Name="idCuenta" ColumnName="idCuenta" />
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="Saldo" ColumnName="Saldo" />
+                <ScalarProperty Name="NumeroCuenta" ColumnName="NumeroCuenta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="EmpresaPatitoModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="ApellidoPaterno" ColumnName="ApellidoPaterno" />
+                <ScalarProperty Name="ApellidoMaterno" ColumnName="ApellidoMaterno" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Celular" ColumnName="Celular" />
+                <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tarjetas">
+            <EntityTypeMapping TypeName="EmpresaPatitoModel.Tarjeta">
+              <MappingFragment StoreEntitySet="Tarjeta">
+                <ScalarProperty Name="cvv" ColumnName="cvv" />
+                <ScalarProperty Name="numeroTarjeta" ColumnName="numeroTarjeta" />
+                <ScalarProperty Name="idCuenta" ColumnName="idCuenta" />
+                <ScalarProperty Name="marca" ColumnName="marca" />
+                <ScalarProperty Name="fechaCaducidad" ColumnName="fechaCaducidad" />
+                <ScalarProperty Name="nombreEntidad" ColumnName="nombreEntidad" />
+                <ScalarProperty Name="idTarjeta" ColumnName="idTarjeta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

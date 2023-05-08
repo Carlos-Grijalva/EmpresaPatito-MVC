@@ -1,0 +1,260 @@
+D:\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+D:\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+D:\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+D:\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+D:\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+D:\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+D:\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+D:\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+D:\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\WebApplication1\WebApplication1\bin\Controlador.dll
+D:\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebApplication1\WebApplication1\bin\Modelo.dll
+D:\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\WebApplication1\WebApplication1\bin\Controlador.pdb
+D:\WebApplication1\WebApplication1\bin\Modelo.pdb
+D:\WebApplication1\WebApplication1\bin\Modelo.dll.config
+D:\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\WebApplication1\WebApplication1\obj\Debug\Vista.csprojAssemblyReference.cache
+D:\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CopyComplete
+D:\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Controlador.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.dll
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Controlador.pdb
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.pdb
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.dll.config
+D:\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csprojAssemblyReference.cache
+D:\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+D:\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CopyComplete
+D:\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Controlador.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Controlador.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.pdb
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Modelo.dll.config
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Familia\source\repos\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Controlador.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Modelo.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Controlador.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Modelo.pdb
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Modelo.dll.config
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.AssemblyReference.cache
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\obj\Debug\Vista.csproj.CopyComplete
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Carlos A Grijalva E\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

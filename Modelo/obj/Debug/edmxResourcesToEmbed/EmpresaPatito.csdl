@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmpresaPatitoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cuenta">
+    <Key>
+      <PropertyRef Name="idCuenta" />
+    </Key>
+    <Property Name="idCuenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Saldo" Type="Double" Nullable="false" />
+    <Property Name="NumeroCuenta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Cuenta_Usuario" FromRole="Cuenta" ToRole="Usuario" />
+    <NavigationProperty Name="Tarjeta" Relationship="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7" FromRole="Cuenta" ToRole="Tarjeta" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Celular" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Cuenta" Relationship="Self.FK_Cuenta_Usuario" FromRole="Usuario" ToRole="Cuenta" />
+  </EntityType>
+  <Association Name="FK_Cuenta_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Cuenta" Type="Self.Cuenta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="Cuenta">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmpresaPatitoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cuentas" EntityType="Self.Cuenta" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_Cuenta_Usuario" Association="Self.FK_Cuenta_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Cuenta" EntitySet="Cuentas" />
+    </AssociationSet>
+    <EntitySet Name="Tarjetas" EntityType="EmpresaPatitoModel.Tarjeta" />
+    <AssociationSet Name="FK__Tarjeta__idCuent__49C3F6B7" Association="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7">
+      <End Role="Cuenta" EntitySet="Cuentas" />
+      <End Role="Tarjeta" EntitySet="Tarjetas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="idTarjeta" />
+    </Key>
+    <Property Name="idTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreEntidad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaCaducidad" Type="DateTime" Precision="0" />
+    <Property Name="marca" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idCuenta" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cuenta" Relationship="EmpresaPatitoModel.FK__Tarjeta__idCuent__49C3F6B7" FromRole="Tarjeta" ToRole="Cuenta" />
+    <Property Name="numeroTarjeta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cvv" Type="Int32" />
+  </EntityType>
+  <Association Name="FK__Tarjeta__idCuent__49C3F6B7">
+    <End Type="EmpresaPatitoModel.Cuenta" Role="Cuenta" Multiplicity="1" />
+    <End Type="EmpresaPatitoModel.Tarjeta" Role="Tarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuenta">
+        <PropertyRef Name="idCuenta" />
+      </Principal>
+      <Dependent Role="Tarjeta">
+        <PropertyRef Name="idCuenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
