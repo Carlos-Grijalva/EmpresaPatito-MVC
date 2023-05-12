@@ -1,22 +1,22 @@
-﻿using System;
+﻿using Controlador;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Modelo;
-using Controlador;
-using System.Diagnostics;
 
 namespace WebApplication1
 {
-    public partial class BuscarUsuarios : System.Web.UI.Page
+    public partial class BuscarCuentas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var listaUsuarios = ControladorUsuario.BuscarPorCriterios(txtCriterios.Text);
-            dgvUsuarios.DataSource = listaUsuarios;
-            dgvUsuarios.DataBind();
+            var listaCuentas = ControladorCuenta.BuscarPorCriterios(txtCriterios.Text);
+            dgvCuentas.DataSource = listaCuentas;
+            dgvCuentas.DataBind();
+
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
@@ -24,9 +24,9 @@ namespace WebApplication1
             try
             {
                 string criterio = txtCriterios.Text;
-                var usuario = ControladorUsuario.BuscarPorCriterios(criterio);
-                dgvUsuarios.DataSource = usuario;
-                dgvUsuarios.DataBind();
+                var cuenta = ControladorCuenta.BuscarPorCriterios(criterio);
+                dgvCuentas.DataSource = cuenta;
+                dgvCuentas.DataBind();
             }
             catch (Exception ex)
             {
@@ -40,42 +40,41 @@ namespace WebApplication1
             try
             {
                 string criterio = txtCriterios.Text;
-                var tarjeta = ControladorUsuario.BuscarID(int.Parse(criterio));
-                dgvUsuarios.DataSource = tarjeta;
-                dgvUsuarios.DataBind();
+                var cuenta = ControladorCuenta.BuscarID(int.Parse(criterio));
+                dgvCuentas.DataSource = cuenta;
+                dgvCuentas.DataBind();
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                //mensaje.InnerText = ex.Message;
-            }
-        }
-
-        protected void eliminar_usuario(object sender, EventArgs e)
-        {
-            Button btn = (Button)sender;
-            try
-            {
-                int id = int.Parse(btn.CommandArgument);
-                Debug.WriteLine(id);
-                ControladorUsuario.EliminarUsuario(id);
-                Response.Redirect("BuscarUsuarios.aspx");
-            }
-            catch (Exception ex)
+            catch (Exception ex )
             {
                 Debug.WriteLine(ex.Message);
                 mensaje.InnerText = ex.Message;
             }
         }
 
-        protected void modificar_usuario(object sender, EventArgs e)
+        protected void eliminar_cuenta(object sender, EventArgs e)
         {
-            
+            Button btn = (Button)sender;
+            try
+            {
+                int id = int.Parse(btn.CommandArgument);
+                Debug.WriteLine(id);
+                ControladorCuenta.EliminarCuenta(id);
+                Response.Redirect("BuscarCuentas.aspx");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                mensaje.InnerText = "Es probable que hayan tarjetas ligadas a esta cuenta";
+            }
+        }
+
+        protected void modificar_cuenta(object sender, EventArgs e)
+        {
             try
             {
                 Button btn = (Button)sender;
                 int id = Int32.Parse(btn.CommandArgument);
-                Response.Redirect("EditarUsuario.aspx?idUsuario=" + id, false);
+                Response.Redirect("EditarCuenta.aspx?idCuenta=" + id, false);
             }
             catch (Exception ex)
             {

@@ -5,7 +5,7 @@
         <form id="form1" runat="server">
             <div id="mensaje" runat="server"></div>
             <div class="row">
-                <div class="col-2">EDITAR USUARIO</div>
+                <div class="col-2">Editar Usuario</div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="txtNombre" class="form-label">Nombre</label>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <asp:Button ID="btnAgregar" CssClass="btn btn-primary" runat="server" Text="Editar Usuario" OnClick="btnAgregar_Click" />
+                        <asp:Button ID="btnAgregar" CssClass="btn btn-primary" runat="server" Text="Editar Usuario" OnClick="btnAgregar_Click" UseSubmitBehavior="false" />
                     </div>
 
                 </div>

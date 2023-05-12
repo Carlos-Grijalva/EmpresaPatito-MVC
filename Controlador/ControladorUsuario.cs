@@ -20,10 +20,10 @@ namespace Controlador
             ModeloUsuario.EliminarUsuario(idUsuario);
         }
 
-        public static void ModificarUsuario(int idUsuario, string nombre, string apellidoP, string apellidoM, string email, string celular)
+        public static void ModificarUsuario(Usuario usuario)
         {
-            Debug.WriteLine(nombre);
-            ModeloUsuario.ModificarUsuario(idUsuario, nombre, apellidoP, apellidoM, email, celular);
+            Debug.WriteLine("Paso por ControladorUsuario/ModificarUsuario");
+            ModeloUsuario.ModificarUsuario(usuario);
         }
 
         public static void IngresarUsuario(Usuario usuario)
@@ -36,9 +36,18 @@ namespace Controlador
             return ModeloUsuario.BuscarPorCriterios(criterios);
         }
 
+        public static List<Usuario> BuscarID(int idUsuario)
+        {
+            return ModeloUsuario.BuscarID(idUsuario);
+        }
         public static Usuario BuscarPorID(int ID)
         {
             return ModeloUsuario.BuscarPorID(ID);
+        }
+
+        public static List<int> MostrarIDs()
+        {
+            return ModeloUsuario.MostrarIDs();
         }
     }
 }

@@ -14,7 +14,11 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                idUsuario.DataSource = ControladorUsuario.MostrarIDs();
+                idUsuario.DataBind();
+            }
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -23,13 +27,14 @@ namespace WebApplication1
 
             try
             {
-                nuevacuenta.idUsuario = Int32.Parse(idUsuario.Text);
+                //nuevacuenta.idUsuario = Int32.Parse(idUsuario.Text);
+                nuevacuenta.idUsuario = int.Parse(idUsuario.SelectedValue);
                 nuevacuenta.Saldo = float.Parse(saldo.Text);
                 nuevacuenta.NumeroCuenta = numCuenta.Text;
 
                 ControladorCuenta.guardarCuenta(nuevacuenta);
 
-                idUsuario.Text = string.Empty;
+                //idUsuario.Text = string.Empty;
                 saldo.Text = string.Empty;
                 numCuenta.Text = string.Empty;
 

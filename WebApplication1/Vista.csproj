@@ -77,10 +77,15 @@
     <Content Include="AgregarCuenta.aspx" />
     <Content Include="AgregarTarjeta.aspx" />
     <Content Include="AgregarUsuario.aspx" />
+    <Content Include="BuscarCuentas.aspx" />
+    <Content Include="BuscarTarjetas.aspx" />
     <Content Include="BuscarUsuarios.aspx" />
+    <Content Include="EditarCuenta.aspx" />
+    <Content Include="EditarTarjeta.aspx" />
     <Content Include="EditarUsuario.aspx" />
     <Content Include="Incluir\CSS\bootstrap.css" />
     <Content Include="Incluir\CSS\bootstrap.min.css" />
+    <Content Include="Incluir\JavaScript\bootstrap.bundle.min.js" />
     <Content Include="Incluir\JavaScript\bootstrap.js" />
     <Content Include="Incluir\JavaScript\bootstrap.min.js" />
     <Content Include="InicioSesion.aspx" />
@@ -119,12 +124,40 @@
     <Compile Include="Base.Master.designer.cs">
       <DependentUpon>Base.Master</DependentUpon>
     </Compile>
+    <Compile Include="BuscarCuentas.aspx.cs">
+      <DependentUpon>BuscarCuentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarCuentas.aspx.designer.cs">
+      <DependentUpon>BuscarCuentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarTarjetas.aspx.cs">
+      <DependentUpon>BuscarTarjetas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarTarjetas.aspx.designer.cs">
+      <DependentUpon>BuscarTarjetas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BuscarUsuarios.aspx.cs">
       <DependentUpon>BuscarUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BuscarUsuarios.aspx.designer.cs">
       <DependentUpon>BuscarUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCuenta.aspx.cs">
+      <DependentUpon>EditarCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarCuenta.aspx.designer.cs">
+      <DependentUpon>EditarCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarTarjeta.aspx.cs">
+      <DependentUpon>EditarTarjeta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarTarjeta.aspx.designer.cs">
+      <DependentUpon>EditarTarjeta.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarUsuario.aspx.cs">
       <DependentUpon>EditarUsuario.aspx</DependentUpon>

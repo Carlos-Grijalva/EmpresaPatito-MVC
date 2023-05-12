@@ -1,22 +1,21 @@
-﻿using System;
+﻿using Controlador;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Modelo;
-using Controlador;
-using System.Diagnostics;
 
 namespace WebApplication1
 {
-    public partial class BuscarUsuarios : System.Web.UI.Page
+    public partial class BuscarTarjetas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var listaUsuarios = ControladorUsuario.BuscarPorCriterios(txtCriterios.Text);
-            dgvUsuarios.DataSource = listaUsuarios;
-            dgvUsuarios.DataBind();
+            var listaTarjetas = ControladorTarjeta.BuscarPorCriterios(txtCriterios.Text);
+            dgvTarjetas.DataSource = listaTarjetas;
+            dgvTarjetas.DataBind();
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
@@ -24,25 +23,9 @@ namespace WebApplication1
             try
             {
                 string criterio = txtCriterios.Text;
-                var usuario = ControladorUsuario.BuscarPorCriterios(criterio);
-                dgvUsuarios.DataSource = usuario;
-                dgvUsuarios.DataBind();
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                mensaje.InnerText = ex.Message;
-            }
-        }
-
-        protected void btnBuscarID_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string criterio = txtCriterios.Text;
-                var tarjeta = ControladorUsuario.BuscarID(int.Parse(criterio));
-                dgvUsuarios.DataSource = tarjeta;
-                dgvUsuarios.DataBind();
+                var tarjeta = ControladorTarjeta.BuscarPorCriterios(criterio);
+                dgvTarjetas.DataSource = tarjeta;
+                dgvTarjetas.DataBind();
             }
             catch (Exception ex)
             {
@@ -51,36 +34,51 @@ namespace WebApplication1
             }
         }
 
-        protected void eliminar_usuario(object sender, EventArgs e)
+        protected void btnBuscarID_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string criterio = txtCriterios.Text;
+                var tarjeta = ControladorTarjeta.BuscarID(int.Parse(criterio));
+                dgvTarjetas.DataSource = tarjeta;
+                dgvTarjetas.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                //mensaje.InnerText = ex.Message;
+            }
+        }
+
+        protected void eliminar_tarjeta(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
             try
             {
                 int id = int.Parse(btn.CommandArgument);
                 Debug.WriteLine(id);
-                ControladorUsuario.EliminarUsuario(id);
-                Response.Redirect("BuscarUsuarios.aspx");
+                ControladorTarjeta.EliminarTarjeta(id);
+                Response.Redirect("BuscarTarjetas.aspx");
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                mensaje.InnerText = ex.Message;
+                //mensaje.InnerText = ex.Message;
             }
         }
 
-        protected void modificar_usuario(object sender, EventArgs e)
+        protected void modificar_tarjeta(object sender, EventArgs e)
         {
-            
             try
             {
                 Button btn = (Button)sender;
                 int id = Int32.Parse(btn.CommandArgument);
-                Response.Redirect("EditarUsuario.aspx?idUsuario=" + id, false);
+                Response.Redirect("EditarTarjeta.aspx?idTarjeta=" + id, false);
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
-                mensaje.InnerText = ex.Message;
+                //mensaje.InnerText = ex.Message;
             }
         }
     }

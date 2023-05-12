@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="Incluir/CSS/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -26,23 +27,28 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="/AgregarUsuario.aspx">Agregar Usuario</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/AgregarCuenta.aspx">Agregar Cuenta</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/AgregarTarjeta.aspx">Agregar Tarjeta</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/BuscarUsuarios.aspx">Buscar Usuario</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a class="nav-link active" href="/InicioSesion.aspx">Iniciar Sesion</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Agregar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/AgregarUsuario.aspx">Usuario</a></li>
+                            <li><a class="dropdown-item" href="/AgregarCuenta.aspx">Cuenta</a></li>
+                            <li><a class="dropdown-item" href="/AgregarTarjeta.aspx">Tarjeta</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Buscar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/BuscarUsuarios.aspx">Usuario</a></li>
+                            <li><a class="dropdown-item" href="/BuscarCuentas.aspx">Cuenta</a></li>
+                            <li><a class="dropdown-item" href="/BuscarTarjetas.aspx">Tarjeta</a></li>
+                            
+                        </ul>
                     </li>
 
                 </ul>
@@ -59,6 +65,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+    <script src="Incluir/JavaScript/bootstrap.bundle.min.js" ></script>
 
 </body>
 </html>

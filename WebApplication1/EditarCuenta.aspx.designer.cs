@@ -11,7 +11,7 @@ namespace WebApplication1
 {
 
 
-    public partial class AgregarCuenta
+    public partial class EditarCuenta
     {
 
         /// <summary>

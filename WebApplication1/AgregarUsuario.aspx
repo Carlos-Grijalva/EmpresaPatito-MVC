@@ -5,7 +5,7 @@
         <form id="form1" runat="server">
             <div id="mensaje" runat="server"></div>
             <div class="row">
-                <div class="col-2"></div>
+                <div class="col-2">Agregar Usuario</div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="txtNombre" class="form-label">Nombre</label>

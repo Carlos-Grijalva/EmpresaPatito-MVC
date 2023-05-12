@@ -1,12 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="AgregarTarjeta.aspx.cs" Inherits="WebApplication1.AgregarTarjeta" %>
-
+﻿<%@ Page Language="C#" MasterPageFile="~/Base.Master" AutoEventWireup="true" CodeBehind="EditarTarjeta.aspx.cs" Inherits="WebApplication1.EditarTarjeta" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid m-5">
         <form id="form3" runat="server">
             <div id="mensaje" runat="server"></div>
             <div class="row">
-                <div class="col-2">Agregar Tarjeta</div>
+                <div class="col-2">Editar Tarjeta</div>
                 <div class="col-6">
                     <div class="mb-3">
                         <label for="idCuenta" class="form-label">ID Cuenta</label>
@@ -47,14 +46,12 @@
 
 
                     <div class="mb-3">
-                        <asp:Button ID="btnAgregar" CssClass="btn btn-primary" runat="server" Text="Agregar Tarjeta" OnClick="btnAgregar_Click" />
+                        <asp:Button ID="btnAgregar" CssClass="btn btn-primary" runat="server" Text="Editar Tarjeta" OnClick="btnAgregar_Click" />
                     </div>
                 </div>
             </div>
         </form>
     </div>
 </asp:Content>
-
-
 
 

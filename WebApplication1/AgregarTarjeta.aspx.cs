@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Modelo;
 using Controlador;
+using System.Diagnostics;
 
 namespace WebApplication1
 {
@@ -13,7 +14,11 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                idCuenta.DataSource = ControladorCuenta.MostrarIDs();
+                idCuenta.DataBind();
+            }
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)
@@ -22,17 +27,15 @@ namespace WebApplication1
 
             try
             {
-                nuevatarjeta.idCuenta = Int32.Parse(idCuenta.Text);
+                nuevatarjeta.idCuenta = Int32.Parse(idCuenta.SelectedValue);
                 nuevatarjeta.nombreEntidad = nomEntidad.Text;
                 nuevatarjeta.numeroTarjeta = numTarjeta.Text;
-                //DateTime fecha = new DateTime(fechaCadu.text);
-                nuevatarjeta.fechaCaducidad = fechaCadu.SelectedDate;
+                nuevatarjeta.fechaCaducidad = fechaCadu.SelectedDate.Date;
                 nuevatarjeta.marca = marca.Text;
-                nuevatarjeta.cvv = Int32.Parse(cvv.Text);
+                nuevatarjeta.cvv = int.Parse(cvv.Text);
 
                 ControladorTarjeta.guardarTarjeta(nuevatarjeta);
 
-                idCuenta.Text = string.Empty;
                 nomEntidad.Text = string.Empty;
                 numTarjeta.Text = string.Empty;
                 fechaCadu.SelectedDate = DateTime.Now;
@@ -46,7 +49,7 @@ namespace WebApplication1
             {
 
                 mensaje.InnerText = ex.Message;
-
+                Debug.WriteLine(ex.Message);
             }
         }
     }

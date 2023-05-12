@@ -22,15 +22,20 @@ namespace Modelo
 
         public static void EliminarUsuario(int idUsuario)
         {
-            using (var modeloEntity = new EmpresaPatitoEntities())
+            try
             {
-                var resultado = (from x in modeloEntity.Usuarios
-                                 where x.idUsuario == idUsuario
-                                 select x).First();
-                
-                modeloEntity.Usuarios.Remove(resultado);
-                _ = modeloEntity.SaveChanges();
+                using (var modeloEntity = new EmpresaPatitoEntities())
+                {
+                    var resultado = modeloEntity.Usuarios.Find(idUsuario);
+                    modeloEntity.Usuarios.Remove(resultado);
+                    modeloEntity.SaveChanges();
+                }
             }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
+            
         }
 
         public static void IngresarSistema(Usuario preUsuario)
@@ -65,7 +70,17 @@ namespace Modelo
                                  select x).ToList();
 
                 return resultado;
+            }
+        }
 
+        public static List<Usuario> BuscarID(int idUsuario)
+        {
+            using (var modeloEntity = new EmpresaPatitoEntities())
+            {
+                var resultado = (from x in modeloEntity.Usuarios
+                                 where x.idUsuario == idUsuario
+                                 select x).ToList();
+                return resultado;
             }
         }
 
@@ -73,99 +88,47 @@ namespace Modelo
         {
             using (var modeloEntity = new EmpresaPatitoEntities())
             {
-                var resultado = (from x in modeloEntity.Usuarios
-                                 where x.idUsuario == idUsuario
-                                 select x).First();
-                Debug.WriteLine(resultado);
+                var resultado = modeloEntity.Usuarios.Find(idUsuario);
                 return resultado;
             }
         }
-        public static void ModificarUsuario(int idUsuario, string nombre, string apellidoP, string apellidoM, string email, string celular)
+
+        public static void ModificarUsuario(Usuario usuario)
         {
-            
-            //var resultado = BuscarPorID(idUsuario);
-            int ID = idUsuario;
-            string NOMBRE = nombre;
-            string APELLIDO_P = apellidoP;
-            string APELLIDO_M = apellidoM;
-            string EMAIL = email;
-            string CELULAR = celular;
-
-            
-            /*
             using (var modeloEntity = new EmpresaPatitoEntities())
             {
-                var resultado = modeloEntity.Usuarios.Find(idUsuario);
-
-                  resultado.Nombre = NOMBRE;
-                  resultado.ApellidoPaterno = APELLIDO_P;
-                    resultado.ApellidoMaterno = APELLIDO_M;
-                //resultado.Contrasena = actulizarUsuario.Contrasena;
-                resultado.Email = EMAIL;
-                    resultado.Celular = CELULAR;
-
-                    modeloEntity.Usuarios.Attach(resultado);
-                    modeloEntity.SaveChanges();
-                Debug.WriteLine("Despues de modificar");
-             }
-            
-            */
-
-            
-            /*
-            using (var modeloEntity = new EmpresaPatitoEntities())
-            {
-                //var usuarioAModificar = modeloEntity.Usuarios.SingleOrDefault(u => u.idUsuario == idUsuario);
-                var usuarioAModificar = modeloEntity.Usuarios.Find(idUsuario);
-                if (usuarioAModificar != null)
-                {
-                    //Debug.WriteLine("ModificarUsuario::"+idUsuario + '\n' + NOMBRE + '\n' + APELLIDO_P + '\n' + APELLIDO_M + '\n' + EMAIL);
-                    usuarioAModificar.Nombre = nombre;
-                    usuarioAModificar.ApellidoPaterno = apellidoP;
-                    usuarioAModificar.ApellidoMaterno = apellidoM;
-                    usuarioAModificar.Email = email;
-                    usuarioAModificar.Celular = celular;
-                    modeloEntity.Usuarios.Attach(usuarioAModificar);
-                    modeloEntity.SaveChanges();
-                }
+                var resultado = modeloEntity.Usuarios.Find(usuario.idUsuario);
+                resultado.Nombre = usuario.Nombre;
+                resultado.ApellidoPaterno = usuario.ApellidoPaterno;
+                resultado.ApellidoMaterno = usuario.ApellidoMaterno;
+                resultado.Email = usuario.Email;
+                resultado.Celular = usuario.Celular;
+                modeloEntity.SaveChanges();
             }
-            */
-            
-            using (var modeloEntity = new EmpresaPatitoEntities())
-            {
-                //var usuarioAModificar = modeloEntity.Usuarios.SingleOrDefault(u => u.idUsuario == idUsuario);
-                var usuarioAModificar = modeloEntity.Usuarios.Find(idUsuario);
-                if (usuarioAModificar != null)
-                {
-                    if (nombre == null)
-                    {
-                        Debug.WriteLine(nombre + " <- Este es el nombre");
-                    }
-                    //Debug.WriteLine(nombre + " <- Este es el nombre");
-                    //Debug.WriteLine("ModificarUsuario::"+idUsuario + '\n' + NOMBRE + '\n' + APELLIDO_P + '\n' + APELLIDO_M + '\n' + EMAIL);
-                    usuarioAModificar.Nombre = nombre.ToString();
-                    usuarioAModificar.ApellidoPaterno = apellidoP.ToString();
-                    usuarioAModificar.ApellidoMaterno = apellidoM.ToString();
-                    usuarioAModificar.Email = email.ToString();
-                    usuarioAModificar.Celular = celular.ToString();
-                    //modeloEntity.Usuarios.Attach(usuarioAModificar);
-                    modeloEntity.SaveChanges();
-                }
-            }
-
-
-
 
         }
 
         public static void CambiarEstadoPorID(Usuario eliminarUsuario)
         {
             var resultado = BuscarPorID(eliminarUsuario.idUsuario);
-
-           
         }
 
-
+        public static List<int> MostrarIDs()
+        {
+            try
+            {
+                using (var modeloEntity = new EmpresaPatitoEntities())
+                {
+                    var resultado = modeloEntity.Usuarios.Select(e => e.idUsuario).ToList();
+                    return resultado;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return new List<int>();
+            }
+        }
     }
 
 }
